@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Responsive Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / NavBar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>YourBrand</span>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Về Chúng Tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Dịch Vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-btn">Đăng Ký</a>
+                    </li>
+                </ul>
+
+                <!-- CTA Button (Desktop) -->
+                <a href="#" class="cta-button">Bắt Đầu</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-heading">Chào Mừng Đến Với<br><span class="highlight">Tương Lai Của Công Nghệ</span></h1>
+            <p class="hero-subtitle">Giải pháp đổi mới và tạo ra giá trị vượt trội cho doanh nghiệp của bạn</p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Khám Phá Ngay</button>
+                <button class="btn btn-secondary">Xem Demo</button>
+            </div>
+        </div>
+        
+        <!-- Hero Background Decoration -->
+        <div class="hero-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Các Tính Năng Nổi Bật</h2>
+                <p>Khám phá những tính năng tuyệt vời mà chúng tôi cung cấp</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-zap"></i>
+                    </div>
+                    <h3 class="feature-title">Hiệu Suất Cao</h3>
+                    <p class="feature-desc">Tốc độ xử lý nhanh nhất để đáp ứng nhu cầu của bạn một cách tối ưu</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Bảo Mật Tối Đa</h3>
+                    <p class="feature-desc">Dữ liệu của bạn được bảo vệ bằng công nghệ mã hóa tiên tiến nhất</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">Hỗ Trợ 24/7</h3>
+                    <p class="feature-desc">Đội ngũ chuyên gia sẵn sàng giúp đỡ bạn bất cứ lúc nào trong ngày</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Responsive Design</h3>
+                    <p class="feature-desc">Hoạt động hoàn hảo trên mọi thiết bị từ desktop đến mobile</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Phân Tích Dữ Liệu</h3>
+                    <p class="feature-desc">Theo dõi và phân tích hiệu suất của bạn với các công cụ mạnh mẽ</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 class="feature-title">Tùy Chỉnh Dễ Dàng</h3>
+                    <p class="feature-desc">Cài đặt và tùy chỉnh theo nhu cầu riêng của bạn một cách nhanh chóng</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div class="section-header">
+                        <h2>Về Chúng Tôi</h2>
+                        <p class="subtitle">Chúng tôi là một đội ngũ giàu kinh nghiệm, đam mê tạo ra các giải pháp công nghệ tiên tiến</p>
+                    </div>
+
+                    <p class="about-text">Với hơn 10 năm kinh nghiệm trong ngành công nghệ, chúng tôi đã giúp hàng nghìn doanh nghiệp phát triển và đạt được mục tiêu của họ. Sứ mệnh của chúng tôi là cung cấp các giải pháp công nghệ chất lượng cao, giá cả cạnh tranh và dịch vụ khách hàng xuất sắc.</p>
+
+                    <p class="about-text">Chúng tôi tin rằng công nghệ phải đơn giản, dễ sử dụng và có thể truy cập được. Đội ngũ của chúng tôi gồm những chuyên gia tài năng, luôn sẵn sàng lắng nghe yêu cầu của bạn và tìm ra giải pháp tốt nhất.</p>
+
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Năm kinh nghiệm</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5000+</h3>
+                            <p>Khách hàng hài lòng</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Dự án hoàn thành</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="image-box">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dịch Vụ Của Chúng Tôi</h2>
+                <p>Chúng tôi cung cấp một loạt các dịch vụ để đáp ứng nhu cầu của bạn</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Phát Triển Web</h3>
+                    <p>Xây dựng các trang web hiện đại, responsive và có hiệu suất cao để giúp doanh nghiệp của bạn phát triển trực tuyến.</p>
+                    <a href="#" class="service-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Ứng Dụng Di Động</h3>
+                    <p>Phát triển ứng dụng di động (iOS & Android) với giao diện thân thiện và chức năng mạnh mẽ.</p>
+                    <a href="#" class="service-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Quản Lý Dữ Liệu</h3>
+                    <p>Giải pháp quản lý và phân tích dữ liệu toàn diện để đưa ra quyết định kinh doanh thông minh.</p>
+                    <a href="#" class="service-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Dịch Vụ Cloud</h3>
+                    <p>Triển khai và quản lý hạ tầng cloud với độ tin cậy cao, bảo mật tối đa và chi phí tối ưu.</p>
+                    <a href="#" class="service-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Bảo Mật Thông Tin</h3>
+                    <p>Đảm bảo an toàn dữ liệu của bạn với các giải pháp bảo mật chuyên nghiệp và tư vấn an ninh mạng.</p>
+                    <a href="#" class="service-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Hỗ Trợ Kỹ Thuật</h3>
+                    <p>Nhận được hỗ trợ kỹ thuật 24/7 từ đội ngũ chuyên gia của chúng tôi qua nhiều kênh liên lạc.</p>
+                    <a href="#" class="service-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Liên Hệ Với Chúng Tôi</h2>
+                <p>Chúng tôi rất muốn nghe từ bạn. Hãy liên hệ với chúng tôi ngay hôm nay</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <!-- Address -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Địa Chỉ</h3>
+                            <p>123 Đường Abc, Quận Bắc, TP. Hồ Chí Minh, Việt Nam</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Điện Thoại</h3>
+                            <p><a href="tel:+84123456789">+84 (123) 456-789</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@yourbrand.com">info@yourbrand.com</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Giờ Làm Việc</h3>
+                            <p>Thứ 2 - Thứ 6: 9:00 - 18:00<br>Thứ 7 - Chủ Nhật: 10:00 - 16:00</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="social-media">
+                        <h3>Kết Nối Với Chúng Tôi</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ và Tên <span class="required">*</span></label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Nhập tên của bạn" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Nhập email của bạn" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số Điện Thoại</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="Nhập số điện thoại"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Tiêu Đề <span class="required">*</span></label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                placeholder="Nhập tiêu đề tin nhắn" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nội Dung <span class="required">*</span></label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="5" 
+                                placeholder="Nhập nội dung tin nhắn của bạn" 
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+                    </form>
+
+                    <!-- Form Success Message -->
+                    <div class="form-message success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Cảm ơn bạn! Tin nhắn của bạn đã được gửi thành công. Chúng tôi sẽ liên hệ với bạn sớm.</p>
+                    </div>
+
+                    <!-- Form Error Message -->
+                    <div class="form-message error-message" id="errorMessage">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Có lỗi xảy ra. Vui lòng thử lại sau.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 YourBrand. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
